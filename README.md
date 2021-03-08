@@ -8,7 +8,7 @@
 5. Add container registry support to the docker cluster.
 >doctl kubernetes cluster registry add \<cluster-name\> 
 6. Generate DigitalOcean API token https://cloud.digitalocean.com/account/api/token
-7.Log in docker to registry. Paste API token when prompted.
+7. Log in docker to registry. Paste API token when prompted.
 >doctl registry login
 8. Install Kubernetes metrics server.
 >kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
