@@ -3,8 +3,7 @@ on:
     branches:
       - master
     paths:
-      - 'config/**'
-      - 'site/**'
+      - '**'
       - 'Dockerfile'
       - '.github/workflows/**'
 
