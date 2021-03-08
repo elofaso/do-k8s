@@ -1,5 +1,5 @@
 # DigitalOcean Kubernetes Set Up
-1. Install doctl https://www.digitalocean.com/docs/apis-clis/doctl/how-to/install/
+1. Install and configure doctl https://www.digitalocean.com/docs/apis-clis/doctl/how-to/install/
 2. Install kubectl https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
 3. Create Kubernetes cluster.
 >doctl k8s cluster create <cluster-name> --node-pool "auto-scale=true;min-nodes=1;max-nodes=5"
@@ -7,7 +7,6 @@
 >doctl registry create \<globally-unique-registry-name\>
 5. Add container registry support to the docker cluster.
 >doctl kubernetes cluster registry add \<cluster-name\> 
-6. Generate DigitalOcean API token https://cloud.digitalocean.com/account/api/token
 7. Log in docker to registry. Paste API token when prompted.
 >doctl registry login
 8. Install Kubernetes metrics server.
