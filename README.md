@@ -15,4 +15,5 @@
 >kubectl create -f https://raw.githubusercontent.com/spotahome/redis-operator/master/example/operator/all-redis-operator-resources.yaml
 9. Edit k8s/node-deployment.yaml to replace 'hello' with your app name, 'elofaso/node-hello' with your repository-name/image-name. Replace Load Balancer size 'lb-small with 'lb-medium' or 'lb-large', if desired; Load Balancer cannot be resized.
 10. Deploy Node app and Redis to Kubernetes cluster.
->kubectl apply -f k8s
+>cd k8s
+>kubectl apply -f .
