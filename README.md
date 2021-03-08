@@ -10,11 +10,10 @@
 6. Generate DigitalOcean API token https://cloud.digitalocean.com/account/api/token
 7.Login Docker to registry
 >doctl registry login
-Install Kubernetes metrics server
+8. Install Kubernetes metrics server
 >kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
-Install Kubernetes Redis failover operator
+9. Install Kubernetes Redis failover operator
 >kubectl create -f https://raw.githubusercontent.com/spotahome/redis-operator/master/example/operator/all-redis-operator-resources.yaml
-Deploy Node and Redis to Kubernetes cluster
+10. Deploy Node and Redis to Kubernetes cluster
 >cd k8s
 >kubectl apply -f .
-
