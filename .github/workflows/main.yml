@@ -21,8 +21,8 @@ jobs:
 
     - name: Build container image
       run: 
-	cd app
-	docker build -t registry.digitalocean.com/elofaso/docker-hello:$(echo $GITHUB_SHA | head -c7) .
+        cd app
+        docker build -t registry.digitalocean.com/elofaso/docker-hello:$(echo $GITHUB_SHA | head -c7) .
 
     - name: Install doctl
       uses: digitalocean/action-doctl@v2
