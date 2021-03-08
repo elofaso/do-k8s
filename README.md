@@ -17,3 +17,4 @@
 10. Deploy Node app and Redis to Kubernetes cluster.
 >cd k8s
 >kubectl apply -f .
+11. Edit .github/workflows/main.yml to match project file structure and Docker image name.
