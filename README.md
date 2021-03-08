@@ -14,6 +14,7 @@
 >kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
 9. Install Kubernetes Redis failover operator.
 >kubectl create -f https://raw.githubusercontent.com/spotahome/redis-operator/master/example/operator/all-redis-operator-resources.yaml
-10. Deploy Node and Redis to Kubernetes cluster.
+10. Edit k8s/node-deployment.yaml to replace 'hello' with your app name, 'elofaso/node-hello' with your repository-name/image-name. Set Load Balancer size as lb-small, lb-medium, or lb-large; Load Balancer cannot be resized.
+11. Deploy Node app and Redis to Kubernetes cluster.
 >cd k8s
 >kubectl apply -f .
