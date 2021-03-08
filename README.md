@@ -18,3 +18,4 @@
 >cd k8s
 >kubectl apply -f .
 11. Edit .github/workflows/main.yml to match project file structure and Docker image name.
+12. Create GitHub Actions secret named DIGITALOCEAN_ACCESS_TOKEN with DigitalOcean API access token. https://github.com/elofaso/do-k8s/settings/secrets/actions 
