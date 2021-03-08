@@ -3,7 +3,7 @@
 2. Create Kubernetes cluster. Change min-nodes and max-nodes to desired values. Change region if desired.
 >doctl kubernetes cluster create \<cluster-name\> --node-pool "auto-scale=true;min-nodes=1;max-nodes=3" --region=sfo3
 3. Install kubectl https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
-4. Create Docker repository.
+4. Create Docker repository, if you do not already have one.
 >doctl registry create \<globally-unique-registry-name\>
 5. Add container registry support to the docker cluster.
 >doctl kubernetes cluster registry add \<cluster-name\> 
